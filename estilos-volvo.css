@@ -249,3 +249,138 @@ body {
 .footer-navegacion a:hover {
     color: #03cff3;
 }
+
+.grupo-imagenes {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.volvo {
+    width: 25%;
+    height: auto;
+}
+
+.volvo:hover {
+    transform: scale(1.05);
+}
+
+/*Configuracion Responsivo*/
+@media (max-width: 768px) {
+    .contenedor-navegacion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grupo-imagenes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .volvo {
+        width: 80%;
+        height: auto;
+    }
+
+    .barra-de-navegacion-principal,
+    .barra-de-navegacion-secundaria {
+        width: 95vw;
+        padding: 10px;
+    }
+
+    .navegacion-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacion-principal li a {
+        font-size: 1em;
+    }
+
+    .navegacion-secundaria {
+        flex-direction: column;
+    }
+
+    .navegacion-secundaria li a {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .seccion-principal {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+    }
+
+    .seccion-principal h2 {
+        font-size: 1.5em;
+    }
+
+    .informacion-noticia {
+        padding: 10px;
+    }
+
+    .informacion-noticia h2 {
+        font-size: 1.2em;
+    }
+
+    .informacion-noticia p {
+        font-size: 1em;
+    }
+
+    .empleados,
+    .quienes-somos,
+    .contacto {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .informacion-completa {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .contenedor-navegacion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barra-de-navegacion-principal,
+    .barra-de-navegacion-secundaria {
+        width: 90vw;
+    }
+
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navegacion-principal li a {
+        font-size: 1.2em;
+    }
+
+    .navegacion-secundaria {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navegacion-secundaria li a {
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .seccion-principal {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 300px;
+    }
+
+    .seccion-principal h2 {
+        font-size: 2em;
+    }
+}
