@@ -1,0 +1,251 @@
+body {
+    font-family: 'Trebuchet MS';
+    margin: 0;
+    padding: 0;
+}
+
+.primera-seccion {
+    margin-top: 0;
+    padding: 0;
+    background-image: url(./img/wallpaperbetter.com_3840x2160.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor-navegacion {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.20vw;
+    align-items: center;
+}
+
+.barra-de-navegacion-principal {
+    background-color: rgba(0, 0, 0, 0.253);
+    width: 85vw;
+    padding: 0.3vw;
+}
+
+.barra-de-navegacion-secundaria {
+    background-color: rgba(66, 66, 66, 0.055);
+    width: 85vw;
+    padding: 10px;
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: auto;
+}
+
+.navegacion-secundaria {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: start;
+    align-items: center;
+    height: 3vh;
+}
+
+.navegacion-principal li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3 ease;
+}
+
+.navegacion-secundaria li {
+    list-style: none;
+}
+
+.navegacion-secundaria li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3 ease;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 40px;
+}
+
+.navegacion-principal li a:hover {
+    color: rgb(0, 174, 255);
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
+.navegacion-secundaria li a:hover {
+    text-decoration-line: underline;
+    color: rgb(0, 174, 255);
+}
+
+.menu-desplegable {
+    position: relative;
+}
+
+.menu-desplegable .desplegable {
+    cursor: pointer;
+}
+
+.menu-desplegable .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(50, 50, 50, 0.9);
+    list-style: none;
+    box-shadow: 0px 50px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.menu-desplegable .sub-menu li {
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.menu-desplegable .sub-menu li.categoria {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-bottom: 4px solid rgb(0, 207, 214);
+    text-align: end;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-desplegable .sub-menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-desplegable .sub-menu li a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(0, 207, 214);
+}
+
+.menu-desplegable:hover .sub-menu {
+    display: block;
+    opacity: 1;
+}
+
+.seccion-principal {
+    display: flex;
+    align-items: start;
+    padding-left: 100px;
+    padding-right: 70px;
+    flex-direction: column;
+    width: auto;
+    padding-top: 650px;
+}
+
+.seccion-principal h2 {
+    color: white;
+}
+
+.informacion-noticia {
+    background-color: rgba(0, 0, 0, 0.637);
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 2);
+}
+
+.informacion-noticia h2 {
+    text-align: center;
+}
+
+.informacion-noticia p {
+    text-align: center;
+    margin: 5px;
+    padding: 3px;
+    color: white;
+}
+
+.modelos-volvo {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    gap: 10px;
+}
+
+.fondo-volvo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: auto;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.fondo-volvo:hover {
+    transform: scale(1.05);
+}
+
+.detalles {
+    width: 60%;
+    height: auto;
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.952);
+    margin-right: 8px;
+}
+
+.detalles h2 {
+    text-align: left;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.detalles .contenido {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 3px;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer p {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.footer-navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-navegacion a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-navegacion a:hover {
+    color: #03cff3;
+}
